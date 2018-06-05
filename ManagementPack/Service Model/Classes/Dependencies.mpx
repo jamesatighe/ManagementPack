@@ -1,0 +1,56 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+        <ClassType ID="MPAuthor.Stores.WebSites" Base="InstanceGroup!Microsoft.SystemCenter.InstanceGroup" Accessibility="Public" Abstract="false" Singleton="true" Hosted="false" />
+        
+      
+      </ClassTypes>
+      <RelationshipTypes>
+
+        <RelationshipType ID="MPAuthor.Stores.CentralContainsWebSites" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.Central"/>
+          <Target ID="Target" Type="MPAuthor.Stores.WebSites"/>
+        </RelationshipType>
+
+        <RelationshipType ID="MPAuthor.Stores.WebSitesContainsWebSite" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.WebSites"/>
+          <Target ID="Target" Type="IIS2012!Microsoft.Windows.InternetInformationServices.6.2.WebSite"/>
+        </RelationshipType>
+
+        <RelationshipType ID="MPAuthor.Stores.CentralContainsDatabase" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.Central"/>
+          <Target ID="Target" Type="SQL!Microsoft.SQLServer.Database"/>
+        </RelationshipType>
+        
+      </RelationshipTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+
+        <DisplayString ElementID="MPAuthor.Stores.WebSites">
+          <Name>MPAuthor Stores WebSite</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.CentralContainsWebSites">
+          <Name>MPAuthor Stores Central Contains WebSites</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.WebSitesContainsWebSite">
+          <Name>MPAuthor Stores WebSites Contains WebSite</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.CentralContainsDatabase">
+          <Name>MPAuthor Stores Central Contains Database</Name>
+          <Description></Description>
+        </DisplayString>
+        
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D4B43EB3-688B-4EEE-86BD-088F0B28ABB3}") = "ManagementPack", "ManagementPack\ManagementPack.mpproj", "{75F9B87C-1DD7-432B-9AE0-2BAC922A55A9}"
+Project("{D4B43EB3-688B-4EEE-86BD-088F0B28ABB3}") = "MPAuthor.Stores", "ManagementPack\MPAuthor.Stores.mpproj", "{75F9B87C-1DD7-432B-9AE0-2BAC922A55A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

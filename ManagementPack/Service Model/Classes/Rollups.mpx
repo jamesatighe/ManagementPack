@@ -1,0 +1,48 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+
+        <ClassType ID="MPAuthor.Stores.Application" Base="System!System.Service" Abstract="false" Hosted="false" Singleton="true" Accessibility="Public" />
+        <ClassType ID="MPAuthor.Stores.Central" Base="System!System.Group" Abstract="false" Hosted="false" Singleton="true" Accessibility="Public" />
+        <ClassType ID="MPAuthor.Stores.Stores" Base="System!System.Group" Abstract="false" Hosted="false" Singleton="true" Accessibility="Public" />
+        <ClassType ID="MPAuthor.Stores.Store" Base="System!System.ApplicationComponent" Abstract="false" Hosted="false" Singleton="false" Accessibility="Public">
+          <Property ID="StoreCode" Key="true" Type="string" />
+        </ClassType>
+        
+      
+      </ClassTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        
+        <DisplayString ElementID="MPAuthor.Stores.Application">
+          <Name>MPAuthor Stores Application</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.Central">
+          <Name>MPAuthor Stores Central</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.Stores">
+          <Name>MPAuthor Stores Stores</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.Store">
+          <Name>MPAuthor Stores Store</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="MPAuthor.Stores.Store" SubElementID="StoreCode">
+          <Name>Store Code</Name>
+          <Description></Description>
+        </DisplayString>
+
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

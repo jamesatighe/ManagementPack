@@ -1,0 +1,77 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <RelationshipTypes>
+        
+        <RelationshipType ID="MPAuthor.Stores.ApplicationContainsCentral" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.Application"/>
+          <Target ID="Target" Type="MPAuthor.Stores.Central"/>
+        </RelationshipType>
+
+        <RelationshipType ID="MPAuthor.Stores.ApplicationContainsStores" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.Application"/>
+          <Target ID="Target" Type="MPAuthor.Stores.Stores"/>
+        </RelationshipType>
+
+        <RelationshipType ID="MPAuthor.Stores.StoreContainsStoreServer" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.Stores"/>
+          <Target ID="Target" Type="MPAuthor.Stores.ComputerRole.StoreServer"/>
+        </RelationshipType>
+
+        <RelationshipType ID="MPAuthor.Stores.StoreContainsStoreClient" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.Store"/>
+          <Target ID="Target" Type="MPAuthor.Stores.ComputerRole.StoreClient"/>
+        </RelationshipType>
+
+        <RelationshipType ID="MPAuthor.Stores.CentralContainsCentralProcessor" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.Central"/>
+          <Target ID="Target" Type="MPAuthor.Stores.ComputerRole.CentralProcessor" />
+        </RelationshipType>
+
+        <RelationshipType ID="MPAuthor.Stores.CentralContainsCentralReceiver" Base="System!System.Containment" Abstract="false" Accessibility="Public">
+          <Source ID="Source" Type="MPAuthor.Stores.Central"/>
+          <Target ID="Target" Type="MPAuthor.Stores.ComputerRole.CentralReciever" />
+        </RelationshipType>
+        
+      </RelationshipTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+
+                
+        <DisplayString ElementID="MPAuthor.Stores.ApplicationContainsCentral">
+          <Name>MPAuthor Stores Application Contains Central</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.ApplicationContainsStores">
+          <Name>MPAuthor Stores Application Contains Stores</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.StoreContainsStoreServer">
+          <Name>MPAuthor Stores Stores Contains Store Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.StoreContainsStoreClient">
+          <Name>MPAuthor Stores Stores Contains Store Client</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.CentralContainsCentralProcessor">
+          <Name>MPAuthor Stores Central Contains Central Processor</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="MPAuthor.Stores.CentralContainsCentralReceiver">
+          <Name>MPAuthor Stores Central Contains Central Reciever</Name>
+          <Description></Description>
+        </DisplayString>
+
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>
